@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Email Demo</title>
+
+    <style type="text/css">
+        /* Prevent text resizing on mobile devices */
+        body, table, td, p, a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* Remove extra spacing in Outlook */
+        table {
+            border-collapse: collapse;
+        }
+
+        /* Make images scale on small screens */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body 
+    style="
+        margin:0; 
+        padding:0; 
+        background-color:#f4f4f4;
+    ">
+    
+
+    <!-- This email is 600px wide, a common standard for newsletters -->
+
+    <!-- Preheader text: shows as preview text in inboxes -->
+    <div 
+    style="
+        margin: 0; 
+        padding: 0;
+        max-height: 0;
+        max-width: 0;
+        overflow: hidden;
+        display: none; 
+        font-size: 1px; 
+        line-height: 1px; 
+        color: #f4f4f4;
+    ">
+
+            A short summary of this email goes here.
+    </div>
+
+    <!-- Full-width background table -->
+    <table 
+        width="100%" 
+        cellpadding="0" 
+        cellspacing="0" 
+        role="presentation">
+
+        <tr>
+            <td align="center" style="padding: 12px;">
+
+                <!-- Main email container (600px wide) -->
+                <table 
+                    width="100%" 
+                    cellpadding="0" 
+                    cellspacing="0" 
+                    role="presentation" 
+                    style="
+                        max-width: 600px;
+                        background-color: #ffffff;
+                        border-radius: 6px;
+                ">
+
+                <!-- Header -->
+                <tr>
+                    <td 
+                        style="
+                        padding: 24px; 
+                        text-align: center;
+                    ">
+
+                        <!-- Replace text with logo image if desired -->
+                        <h1 
+                            style="
+                            margin: 0; 
+                            font-family: Arial, sans-serif; 
+                            font-size: 24px;
+                        ">
+
+                            Floral Frame Co Weekly Newsletter
+                        </h1>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td
+                        style="
+                        padding: 24px; 
+                        text-align: center;
+                    ">
+
+                    <p>
+                        This week's newsletter update.
+                    </p>
+                        
+                    </td>
+                </tr>
+
+                <!-- Image section -->
+                <tr>
+                    <td 
+                        align="center" 
+                        style="
+                            padding: 24px;
+                        ">
+
+                        <!-- Optional image: replace or remove as needed -->
+                        <img src="white-floral-frame.jpg" 
+                        alt="Decorative floral frame"
+                        width="200"
+                        style="
+                            display: block;
+                            border: 0;
+                            outline: none;
+                            text-decoration: none;
+                    ">
+                    </td>
+                </tr>
+
+                <!-- Soft background content block -->
+                <tr>
+                    <td style="padding: 24px;">
+
+                        <table
+                            width="100%"
+                            cellpadding="0"
+                            cellspacing="0"
+                            role="presentation"
+                            style="
+                                background-color: #f7f7f7;
+                                border-radius: 6px;">
+                            <tr>
+                                <td
+                                    style="
+                                    padding: 24px;
+                                    font-family: Arial, sans-serif;
+                                    font-size: 16px;
+                                    line-height: 1.6;
+                                ">
+
+                                    <p>Hi there,</p>
+
+                                    <p>
+                                        Welcome to this week's newsletter. Here's a quick update on what's new.
+                                    </p>
+
+                                    <p style="margin: 0 0 12px 0;">
+                                        Update one:
+                                    </p>
+
+                                    <p>
+                                        Brand new newsletter template.
+                                    </p>
+
+                                    <p style="margin: 0 0 12px 0;">
+                                        Update two:
+                                    </p>
+
+                                    <p>
+                                        The new newsletter template has an image.
+                                    </p>
+
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- Button section-->
+                <tr>
+                    <td 
+                        align="center" 
+                        style="padding: 24px;
+                    ">
+                        
+                        <!-- Button table -->
+                        <table 
+                            cellpadding="0" 
+                            cellspacing="0" 
+                            role="presentatio">
+
+                            <tr>
+                                <td
+                                    align="center"
+                                    style="
+                                        background-color: #333333;
+                                        border-radius: 4px;
+                                    ">
+                                    
+                                    <a href="#"
+                                        style="
+                                            display: inline-block;
+                                            padding: 12px 24px;
+                                            font-family: Arial, sans-serif;
+                                            font-size: 16px;
+                                            color: #ffffff;
+                                            text-decoration: none;
+                                        ">
+                                            Read More
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+
+                <!-- Footer -->
+                <tr>
+                    <td 
+                        style="
+                            padding: 24px; 
+                            text-align: center; 
+                            font-family: Arial, sans-serif; 
+                            font-size: 12px; 
+                            color: #777777;
+                        ">
+                        
+                        <p style="
+                            margin: 0 0 8px 0;
+                        ">
+
+                            You're receiving this email because you signed up on our website.
+                        </p>
+
+                        <p 
+                            style="
+                            margin: 0;
+                        ">
+
+                            <a href="#" 
+                            style="
+                                color: #777777; 
+                                text-decoration: underline;
+                            ">
+                                Unsubscribe
+                            </a>
+                        </p>
+
+                        <p
+                            style="
+                            margin-top: 8px;
+                            font-size: 11px;
+                            color: #aaaaaa;
+                        ">
+                            This email is a fictional demo created for portfolio purposes.
+                        </p>
+                    </td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

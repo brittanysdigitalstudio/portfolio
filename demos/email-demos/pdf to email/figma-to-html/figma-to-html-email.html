@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Email Demo</title>
+
+    <style type="text/css">
+        /* Prevent text resizing on mobile devices */
+        body, table, td, p, a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* Remove extra spacing in Outlook */
+        table {
+            border-collapse: collapse;
+        }
+
+        /* Adds in an optional dark mode that will sometimes get ignored */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a !important;
+            }
+        }
+    </style>
+</head>
+
+<body 
+    style="
+        margin:0; 
+        padding:0; 
+        background-color:#f4f4f4;
+    ">
+    
+
+    <!-- This email is 600px wide, a common standard for newsletters -->
+
+    <!-- Preheader text: shows as preview text in inboxes -->
+    <div 
+    style="
+        overflow: hidden;
+        display: none; 
+        font-size: 1px; 
+        line-height: 1px; 
+        color: #f4f4f4;
+        max-height: 0;
+        max-width: 0;
+    ">
+
+            Monthly Newsletter
+    </div>
+
+    <!-- Main Container Table -->
+    <table 
+        width="600" 
+        cellpadding="0" 
+        cellspacing="0" 
+        role="presentation"
+        style="margin: 0 auto;
+    ">
+    <!-- Header -->
+        <tr>
+            <td
+                style="padding: 16px 24px;
+            ">
+             <table
+                width="100%"
+                cellpadding="0"
+                cellspacing="0"
+                role="presentation"
+            >
+                <tr>
+                    <!-- Brand Name -->
+                    <td
+                        align="left"
+                        style="
+                        font-family: Arial, sans-serif;
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: #1f3a8a;
+                    ">
+                        Brand Name
+                    </td>
+
+                    <!-- Date -->
+                    <td
+                        align="right"
+                        style="
+                            font-family: Arial, sans-serf;
+                            font-size: 12px;
+                            color: #666666;
+                    ">
+                        January 2026
+                    </td>
+                </tr>
+             </table>   
+            </td>
+        </tr>
+
+        <!-- Hero Section -->
+        <tr>
+            <td
+                style="
+                    padding: 0 24px 24px;
+                    font-family: Arial, sans-serif;
+            ">
+                <!-- Hero Image -->
+                <img 
+                    src="https://cdn.pixabay.com/photo/2015/01/09/11/09/meeting-594091_1280.jpg" 
+                    alt="Team meeting"
+                    width="552"
+                    style="
+                        display: block;
+                        width: 100%;
+                        max-width: 552px;
+                        height: auto;
+                        border: 0;
+                        border-radius: 6px;
+                ">
+
+                <!-- Headline -->
+                <h1
+                    style="
+                        margin: 16px 0 8px;
+                        font-size: 24px;
+                        line-height: 1.3;
+                        color: #111111;
+                        font-weight: bold;
+                ">
+                    This Month's Highlights
+                </h1>
+
+                <!-- Subtext -->
+                <p
+                    style="
+                        margin: 0;
+                        font-size: 14px;
+                        line-height: 1.6;
+                        color: #555555;
+                ">
+                    Discover the latest updates and insights from our team.
+                </p>
+            </td>
+        </tr>
+
+        <!-- Divider -->
+        <tr>
+            <td style="padding: 0 24px;">
+                <table 
+                    width="100%"
+                    cellpadding="0"
+                    cellspacing="0"
+                    role="presentation"
+                >
+                    <tr>
+                        <td
+                            height="1"
+                            style="
+                                background-color: #d1d5db;
+                                font-size: 0;
+                                line-height: 0;
+                        ">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Articles Section -->
+        <tr>
+            <td 
+                style="
+                    padding: 24px;
+                    font-family: Arial, sans-serif;
+            ">
+
+            <!-- Article 1 -->
+            <table
+                width="100%"
+                cellpadding="0"
+                cellspacing="0"
+                role="presentation"
+                style="margin-bottom: 24px;
+            ">
+                <tr>
+                    <!-- Image -->
+                    <td
+                        width="120"
+                        valign="top"
+                        style="padding-right: 16px;"
+                    >
+                        <img 
+                            src="https://cdn.pixabay.com/photo/2018/03/27/21/43/startup-3267505_1280.jpg" 
+                            alt="Article preview"
+                            width="120"
+                            style="
+                                display: block;
+                                width: 100%;
+                                max-width: 120px;
+                                height: auto;
+                                border: 0;
+                                border-radius: 4px;
+                        ">
+                    </td>
+
+                    <!-- Text -->
+                    <td valign="top">
+                        <h3
+                            style="
+                                margin: 0 0 8px;
+                                font-size: 16px;
+                                color: #111111;
+                        ">
+                            How We Improved Team Collaboration
+                        </h3>
+
+                        <p
+                            style="
+                                margin: 0 0 8px;
+                                font-size: 14px;
+                                line-height: 1.6;
+                                color: #555555;
+                        ">
+                            A behind-the-scenes look at the tools and workflows that helped 
+                            our team work better together.
+                        </p>
+
+                        <a 
+                            href="#"
+                            style="
+                                font-size: 14px;
+                                color: #1f3a8a;
+                                text-decoration: underline;
+                        ">
+                            Read more
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Article 2 -->
+            <table
+                width="100%"
+                cellpadding="0"
+                cellspacing="0"
+                role="presentation"
+            >
+                <tr>
+                    <!-- Image -->
+                    <td
+                        width="120"
+                        valign="top"
+                        style="padding-right: 16px;
+                    ">
+
+                        <img
+                            src="https://cdn.pixabay.com/photo/2017/06/13/06/08/bag-2397758_1280.jpg"
+                            alt="Article preview"
+                            width="120"
+                            style="
+                                display: block;
+                                width: 100%;
+                                max-width: 120px;
+                                height: auto;
+                                border: 0;
+                                border-radius: 4px;
+                        ">
+                    </td>
+
+                    <!-- Text -->
+                    <td valign="top">
+                        <h3
+                            style="
+                                margin: 0 0 8px;
+                                font-size: 16px;
+                                color: #111111;
+                        ">
+                            What's New This Month
+                        </h3>
+
+                        <p
+                            style="
+                                margin: 0 0 8px;
+                                font-size: 14px;
+                                line-height: 1.6;
+                                color: #555555;
+                        ">
+                            Feature updates, improvements, and small changes you might have missed.
+                        </p>
+
+                        <a
+                            href="#"
+                            style="
+                                font-size: 14px;
+                                color: #1f3a8a;
+                                text-decoration: underline;
+                        ">
+                            Read more
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Divider -->
+            <table 
+                width="100%" 
+                cellpadding="0" 
+                cellspacing="0" 
+                role="presentation"
+                style="margin-top: 24px;
+                ">
+
+                <tr>
+                    <td
+                        height="1"
+                        style="
+                            background-color: #d1d5db;
+                            font-size: 0;
+                            line-height: 0;
+                    ">
+                    &nbsp;
+                    </td>
+                </tr>
+            </table>
+
+        
+            <!-- CTA Section -->
+            <table
+                width="100%"
+                cellpadding="0"
+                cellspacing="0"
+                role="presentation">
+                <tr>
+                    <td
+                        align="center"
+                        style="
+                            padding: 32px 24px 40px;
+                            font-family: Arial, sans-serif;
+                    ">
+                        <!-- CTA Text -->
+                        <p
+                            style="
+                                margin:  0 0 16px;
+                                font-size: 16px;
+                                color: #111111;
+                                font-weight: bold;
+                        ">
+                            Want the full story?
+                        </p>
+
+                        <p
+                            style="
+                                margin: 0 0 24px;
+                                font-size: 14px;
+                                color: #555555;
+                                line-height: 1.6;
+                        ">
+                            Catch up on all of our latest articles, updates, and resources.
+                        </p>
+
+                        <!-- Button Table -->
+                        <table
+                            cellpadding="0"
+                            cellspacing="0"
+                            role="presentation"
+                        >
+                            <tr>
+                                <td
+                                    bgcolor="#1f3a8a"
+                                    style="
+                                        padding: 12px 24px;
+                                        border-radius: 4px;
+                                ">
+                                    <a 
+                                        href="#"
+                                        style="
+                                            display: inline-block;
+                                            font-size: 14px;
+                                            font-family: Arial, sans-serif;
+                                            color: #ffffff;
+                                            text-decoration: none;
+                                            font-weight: bold;
+                                    ">
+                                    Read the full newsletter
+                                </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Footer -->
+            <tr>
+                <td
+                    style="
+                        padding: 32px 24px 40px;
+                        font-family: Arial, sans-serif;
+                        font-size: 12px;
+                        color: #777777;
+                        text-align: center;
+                ">
+
+                <!-- Divider-->
+                <table
+                    width="100%"
+                    cellpadding="0"
+                    cellspacing="0"
+                    role="presentation"
+                    style="margin-bottom: 24px;"
+                >
+                    <tr>
+                        <td
+                            height="1"
+                            bgcolor="#d1d5db"
+                            style="
+                                font-size: 0;
+                                line-height: 0;"
+                        >
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+
+                <p style="margin: 0 0 8px;">
+                    Brand Name • January 2026
+                </p>
+
+                <p style="margin: 0;">
+                    <a 
+                        href="#"
+                        style="
+                            color: #777777;
+                            text-decoration: underline;
+                    ">
+                        Unsubscribe
+                    </a>
+                </p>
+
+                <!-- Portfolio Disclaimer -->
+                <p
+                    style="
+                        margin-top: 12px;
+                        font-size: 11px;
+                        color: #aaaaaa;
+                ">
+                    This email is a fictional demo created for portfolio purposes.
+                </p>
+                </td>
+            </tr>
+        </td>
+    </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Email Demo</title>
+
+    <style type="text/css">
+        /* Prevent text resizing on mobile devices */
+        body, table, td, p, a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* Remove extra spacing in Outlook */
+        table {
+            border-collapse: collapse;
+        }
+
+        /* Adds in an optional dark mode that will sometimes get ignored */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a !important;
+            }
+        }
+    </style>
+</head>
+
+<body 
+    style="
+        margin:0; 
+        padding:0; 
+        background-color:#f4f4f4;
+    ">
+    
+
+    <!-- This email is 600px wide, a common standard for newsletters -->
+
+    <!-- Preheader text: shows as preview text in inboxes -->
+    <div 
+    style="
+        overflow: hidden;
+        display: none; 
+        font-size: 1px; 
+        line-height: 1px; 
+        color: #f4f4f4;
+        max-height: 0;
+        max-width: 0;
+    ">
+
+            Your order has shipped and is on its way.
+    </div>
+
+    <!-- Full-width background table -->
+    <table 
+        width="100%" 
+        cellpadding="0" 
+        cellspacing="0" 
+        role="presentation">
+
+        <tr>
+            <td align="center" style="padding: 16px;">
+
+                <!-- Main email container (600px wide) -->
+                <table 
+                    width="600"
+                    cellpadding="0" 
+                    cellspacing="0" 
+                    role="presentation" 
+                    style="
+                        max-width: 600px;
+                        width: 100%;
+                        background-color: #ffffff;
+                        border-radius: 6px;
+                ">
+
+                <!-- Header -->
+                <tr>
+                    <td 
+                        style="
+                        padding: 32px 24px 16px; 
+                        text-align: center;
+                        font-family: Arial, sans-serif;
+                    ">
+
+                        <!-- Replace text with logo image if desired -->
+                        <h1 
+                            style="
+                            margin: 0; 
+                            font-size: 28px;
+                        ">
+
+                            Cassette & Co
+                        </h1>
+                    </td>
+                </tr>
+
+                <!-- Body -->
+                <tr>
+                    <td 
+                        align="center" style="padding: 24px;">
+
+                        <h2
+                            style="
+                                margin: 16px 0 0;
+                                font-family: Arial, sans-serif;
+                                font-weight: normal;
+                                color: #333333;
+                                text-align: center;
+                        ">
+                            Your order has shipped
+                        </h2>
+
+                        <p
+                            style="
+                                margin: 16px 0 0;
+                                font-family: Arial, sans-serif;
+                                font-size: 14px;
+                                line-height: 1.6;
+                                text-align: center;
+                        ">
+                            Your order is on its way! You can track your shipment using the link below.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center" style="padding: 24px;">
+                        <a 
+                            href="#"
+                            style="
+                                display: inline-block;
+                                padding: 12px 20px;
+                                background-color: #333333;
+                                color: #ffffff;
+                                text-decoration: none;
+                                font-family: Arial, sans-serif;
+                                font-size: 14px;
+                                border-radius: 4px;
+                        ">
+                            Track Your Package
+                        </a>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td 
+                        style="
+                            padding: 24px;
+                            font-family: Arial, sans-serif;
+                            font-size: 14px;
+                            line-height: 1.6;
+                    ">
+
+                    <p
+                        style="
+                            margin: 0 0 12px 0;
+                            font-size: 16px;
+                            font-weight: bold;
+                    ">
+                        Shipping Details
+                    </p>
+
+                    <table
+                        width="100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                    >
+                        <tr>
+                            <td 
+                                style="
+                                    padding: 4px 0;
+                                    color: #777777;">
+                                Shipping Address        
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 4px 0;">
+                                Jane Doe<br>
+                                123 Main Street<br>
+                                Portland, OR 97205<br>
+                                United States
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p style="
+                            margin: 0 0 12px 0;
+                            font-size: 16px;
+                            font-weight: bold;
+                    ">
+                            Order Summary
+                    </p>
+                    
+                    <!-- Product name injected by email platform -->
+                    <!-- Price injected dynamically -->
+                    <table 
+                        width="100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                    >
+                        <tr>
+                            <td style="padding: 8px 0;">
+                                Email Template - Marketing Layout 
+                            </td>
+                            <td align="right" style="padding: 8px 0;">
+                                $24.00
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="
+                                    padding: 4px 0;
+                                    color: #777777;
+                            ">
+                                    Quantity    
+                            </td>
+                            <td align="right" style="padding: 8px 0; color: #777777;">
+                                1
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td 
+                                style="
+                                    padding: 12px 0;
+                                    font-weight: bold;
+                                    border-top: 1px solid #e0e0e0;
+                            ">
+                                    Total
+                            </td>
+                        
+                            <td 
+                                align="right"
+                                style="
+                                    padding: 12px;
+                                    font-weight: bold;
+                                    border-top: 1px solid #e0e0e0;
+                            ">
+                                    $24.00
+                            </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td 
+                        style="
+                        padding: 0 24px 24px;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        line-height: 1.6;
+                    ">
+                        <p style="margin: 0;">
+                            Your package is on the way. If you have any questions about your shipment, reply 
+                            to this email and we'll be happy to help.
+                        </p>
+                    </td>
+                </tr>
+                
+
+                <!-- Footer -->
+                <tr>
+                    <td 
+                        style="
+                            padding: 16px 24px 32px; 
+                            text-align: center; 
+                            font-family: Arial, sans-serif; 
+                            font-size: 12px; 
+                            color: #777777;
+                    ">
+                        
+                        <p style="margin: 0;">
+                            You're receiving this email because you signed up on our website.
+                        </p>
+
+                        <p style="margin: 0;">
+                            <a 
+                                href="#" 
+                                style="
+                                    color: #777777; 
+                                    text-decoration: underline;
+                            ">
+                                Unsubscribe
+                            </a>
+                        </p>
+
+                        <p
+                            style="
+                            margin-top: 8px;
+                            font-size: 11px;
+                            color: #aaaaaa;
+                        ">
+                            This email is a fictional demo created for portfolio purposes.
+                        </p>
+                    </td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

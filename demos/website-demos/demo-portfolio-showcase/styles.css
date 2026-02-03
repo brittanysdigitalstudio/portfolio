@@ -1,0 +1,251 @@
+/* ==========
+    CSS Reset (light)
+========== */
+/* Use a simple box model that is easy to reason about */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margins without being agressive */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+}
+
+/* ==========
+    CSS Variables
+========== */
+:root {
+    /* Color Palette */
+    --color-text: #1a1a1a;
+    --color-background: #f9f9f7;
+    --color-accent: #6b4eff;
+
+    /* Typography */
+    --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-size-sm: 0.95rem;
+    --font-size-base: 1rem;
+    --font-size-md: 1.25rem;
+    --font-size-lg: 1.75rem;
+    --font-size-xl: 2.25rem;
+    --line-height-base: 1.6;
+
+    /* Spacing Scale */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 3rem;
+
+    /* Layout */
+    --max-width: 64rem;
+
+    /* Card effects */
+    --color-card-background: #f3f3f1;
+    --color-card-hover: #eeeeeb;
+    --shadow-card: 0px 6px rgba(0, 0, 0,0.06);
+    --shadow-card-hover: 0 4px 10px rgba(0, 0, 0, 0.08)
+}
+
+/* ==========
+    Base Styles
+========== */
+body {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+/* Keep content readable and centered */
+main, header, footer {
+    max-width: var(--max-width);
+    padding: var(--space-md);
+    margin-inline: auto;
+}
+
+/* ==========
+    Headings
+========== */
+h1, h2, h3 {
+    line-height: 1.25;
+}
+
+/*Visual seperation without styling commitment */
+h2 {
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+}
+
+h3 {
+    margin-bottom: var(--space-xs);
+}
+
+/* ==========
+    Text Elements
+========== */
+p {
+    margin-bottom: var(--space-sm);
+}
+
+/* ==========
+    Lists
+========== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* ==========
+    Links
+========== */
+a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+    transition: text-underline-offset 0.15s ease;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+:focus {
+    outline: none;
+}
+
+/* ==========
+    Skip Link
+========== */
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: var(--space-xs) var(--space-sm);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    transform: translateY(-100%);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+/* ==========
+    Portfolio Items
+========== */
+
+/* Space between projects */
+ul > li {
+    margin-bottom: var(--space-md);
+}
+
+/* Project Container */
+article {
+    padding: var(--space-sm);
+    background-color: var(--color-card-background);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-card);
+    transition: transform 0.15s;
+}
+
+/* Project images shouild never overflow */
+article img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: var(--space-sm);
+}
+
+/* ==========
+    Responsive Project grid
+========== */
+
+/* Defailt: stacked layout (mobile-first) */
+/* No grid needed here */
+
+/* Grid layout for larger screens */
+@media (min-width:48rem) {
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+    }
+
+    /* Remove extra spacing added for stacked layout */
+    ul > li {
+        margin-bottom: 0;
+    }
+}
+
+/* Respect reduced motion preferences for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
+
+/*  Optional wider layout */
+@media (min-width: 64rem) {
+    ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ==========
+    Light Hover States
+========== */
+
+/*Project container hover */
+article {
+    transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+article:hover, article:focus-within {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-card-hover);
+}
+
+article:hover img, article:focus-within img {
+    opacity: 0.95;
+}
+
+/* Project link hover */
+article a {
+    font-weight: 500;
+}
+
+article a:hover, article a:focus-visible {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.25em;
+}
+
+/* ==========
+    Typography Scale
+========== */
+
+/* Page title */
+h1 {
+    font-size: var(--font-size-xl);
+}
+
+/* Section headings */
+h2 {
+    font-size: var(--font-size-lg);
+}
+
+/* Project titles */
+h3 {
+    font-size: var(--font-size-md);
+}
+
+/* Body text */
+p, a {
+    font-size: var(--font-size-sm);
+}
+
+/* Optional small text (if you add captions later) */
+small {
+    font-size: var(--font-size-sm);
+}

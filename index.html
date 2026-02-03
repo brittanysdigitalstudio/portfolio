@@ -12,14 +12,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Main page wrapper -->
-    <div class="page">
+
+    <!-- Navigatin -->
+    <!-- Added aria-current to the navigation for Accessibility -->
+    <nav class="site-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Page Wrapper -->
+    <main class="page">
 
     <!-- Hero Section -->
      <header class="hero">
         <h1>Brittany S | Brittany's Digital Studio</h1>
         <p class="tagline">I design and code clean, reliable HTML email templates and simple websites.</p>
-        <p class="tagline">Focused on calm, readable layouts, beginner-friendly code, and Structurally sound.</p>
+        <p class="tagline">Focused on calm, readable layouts, beginner-friendly code, and Structurally sound design.</p>
         <p>Contact me: <a href="mailto:brittanysdigitalstudio@yahoo.com">brittanysdigitalstudio@yahoo.com</a></p>
      </header>
 
@@ -30,112 +42,39 @@
         <div class="divider-group">
         <div class="divider"></div>
         <p>
-            My focus is on email layouts that work across major clients, feel intentional, and are easy to 
-            reuse or customize. I build newsletters, text-first marketing emails, image-based promotional 
-            templates, and ecommerce emails using HTML and inline-safe CSS.
+            I build newsletters, marketing emails, and lightweight websites using HTML and CSS. My focus is on clean, accessible layouts that are easy to maintain and adapt.
         </p>
 
         <p>
-            I also make calm, readable, and begeinner friendly, and structurally sound websites. My focus is on 
-            one page, but I can make multi page.
+            I value calm, structured design and beginner-friendly code for long-term usability.
         </p>
         <div class="divider"></div>
         </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Portfolio Highligts -->
     <section class="section">
-        <h2>Portfolio</h2>
-        <h3>Email Demos</h3>
+        <h2>Portfolio Highlights</h2>
         <div class="card-grid">
             <div class="card">
-                <img src="screenshots/email-screenshots/newsletter-email-screenshot.png" alt="Screenshot of a newsletter email demo">
-                <h3>Newsletter Email</h3>
-                <p>A mobile friendly email newsletter</p>
-                <a target="_blank" rel="noopener" href="demos/email-demos/demo-newsletter-email/newsletter-demo-email.html" class="button">View Demo</a>
-            </div>
-
-            <div class="card">
-                <img src="screenshots/email-screenshots/text-marketing-email-screenshot.png" alt="Screenshot of a text email demo">
-                <h3>Marketing Email Text Based</h3>
-                <p>Marketing email that is text based and mobile friendly</p>
-                <a target="_blank" rel="noopener" href="demos/email-demos/demo-text-marketing-email/text-market-demo.html" class="button">View Demo</a>
-            </div>
-
-            <div class="card">
-                <img src="screenshots/email-screenshots/image-marketing-email-screenshot.png" alt="Screenshot of an image based marketing email demo">
-                <h3>Marketing Email Image Based</h3>
-                <p>Marketing email that is image based and mobile friendly</p>
-                <a target="_blank" rel="noopener" href="demos/email-demos/demo-image-marketing-email/image-marketing-email-demo.html" class="button">View Demo</a>
-            </div>
-        </div>
-
-        <h3>Ecommerce Email Demos</h3>
-        <div class="card-grid">
-            <div class="card">
-                <img src="screenshots/email-screenshots/ecommerce-emails/welcome-email.png" alt="Screenshot of a welcome email demo">
-                <h3>Welcome Email</h3>
-                <p>Welcome email demo</p>
-                <a target="_blank" rel="noopener" href="demos/email-demos/ecommerce-emails/transactional-email/welcome-email.html" class="button">View Demo</a>
-            </div>
-
-            <div class="card">
-                <img src="screenshots/email-screenshots/ecommerce-emails/sale-based.png" alt="Screenshot of a sale based email demo">
-                <h3>Sale Email</h3>
-                <p>Sale email demo</p>
-                <a target="_blank" rel="noopener" href="demos/email-demos/ecommerce-emails/transactional-email/sale-based-marketing-email.html" class="button">View Demo</a>
-            </div>
-
-            <div class="card">
-                <img src="screenshots/email-screenshots/ecommerce-emails/password-reset.png" alt="Screenshot of a password reset email demo">
-                <h3>Password Reset Email</h3>
-                <p>Password reset email demo</p>
-                <a target="_blank" rel="noopener" href="demos/email-demos/ecommerce-emails/transactional-email/password-reset-email.html" class="button">View Demo</a>
-            </div>
-
-            <div class="card">
-                <img src="screenshots/email-screenshots/ecommerce-emails/order-confirmation.png" alt="Screenshot of a order confirmation email demo">
-                <h3>Order Confirmation Email</h3>
-                <p>Order confirmation email demo</p>
-                <a target="_blank" rel="noopener" href="demos/email-demos/ecommerce-emails/transactional-email/order-confirmation-email.html" class="button">View Demo</a>
-            </div>
-
-            <div class="card">
-                <img src="screenshots/email-screenshots/ecommerce-emails/order-shipped.png" alt="Screenshot of a order shipped confirmation email demo">
-                <h3>Order Shipped Email</h3>
-                <p>Order shipped email demo</p>
-                <a target="_blank" rel="noopener" href="demos/email-demos/ecommerce-emails/transactional-email/order-shipped-email.html" class="button">View Demo</a>
-            </div>
-        </div>
-
-        <h3>Website Demos</h3>
-        <div class="card-grid">
-            <div class="card">
-                <img src="screenshots/website-screenshots/resume-template.png" alt="Screenshot of a resume website demo">
+                <img src="screenshots/website-screenshots/resume-template.png" alt="Screenshot of a minimal resume demo">
                 <h3>Minimal Resume Website</h3>
-                <p>One page minimal resume website built for job seekers</p>
+                <p>A one-page resume website built for job seekers</p>
                 <a target="_blank" rel="noopener" href="demos/website-demos/demo-minimal-resume/index.html" class="button">View Demo</a>
             </div>
 
             <div class="card">
-                <img src="screenshots/website-screenshots/portfolio-resume-template.png" alt="Screenshot of a portfolio resume website demo">
-                <h3>Portfolio Resume Website</h3>
-                <p>One page portfolio resume website built for web developers who are also job seekers</p>
-                <a target="_blank" rel="noopener" href="demos/website-demos/demo-portfolio-resume/index.html" class="button">View Demo</a>
-            </div>
-
-            <div class="card">
-                <img src="screenshots/website-screenshots/two-column-resume-template.png" alt="Screenshot of a two column resume website demo">
-                <h3>Two Column Resume Website</h3>
-                <p>Two column resume website built for job seekers who need a little more information</p>
-                <a target="_blank" rel="noopener" href="demos/website-demos/demo-two-column-resume/index.html" class="button">View Demo</a>
-            </div>
-
-            <div class="card">
-                <img src="screenshots/website-screenshots/playful-portfolio-template.png" alt="Screenshot of a playful portfolio website">
+                <img src="screenshots/website-screenshots/playful-portfolio-template.png" alt="Screenshot of a playful portfolio demo">
                 <h3>Playful Portfolio Website</h3>
-                <p>A playful and fun portfolio website that features three project cards</p>
+                <p>A playful portfolio website showcasing 3 projects</p>
                 <a target="_blank" rel="noopener" href="demos/website-demos/demo-playful-portfolio-template/index.html" class="button">View Demo</a>
+            </div>
+
+            <div class="card">
+                <img src="screenshots/email-screenshots/newsletter-email-screenshot.png" alt="Screenshot of a newsletter email demo">
+                <h3>Newsletter Email</h3>
+                <p>Mobile-friendly newsletter design</p>
+                <a target="_blank" rel="noopener" href="demos/email-demos/demo-newsletter-email/newsletter-demo-email.html" class="button">View Demo</a>
             </div>
         </div>
     </section>
@@ -148,16 +87,23 @@
 
         <ul class="skills-list">
             <li><strong>HTML:</strong> Semantic markup, accessible structure, clean layouts</li>
-            <li><strong>CSS:</strong> Responsive layouts, Flexbox, Grid, calm visual hierarchy</li>
-            <li><strong>Email Development:</strong> Structurally sound email development that works with most email providers</li>
+            <li><strong>CSS:</strong> Responsive layouts, Flexbox, Grid</li>
+            <li><strong>Email Development:</strong> Structurally sound for major clients</li>
             <li><strong>Accessibility:</strong> Alt text, readable contrast, beginner-friendly structure</li>
             <li><strong>Website Builders:</strong> Canva Websites, WordPress, Square, Big Cartel</li>
-            <li><strong>Tools:</strong> GitHub, GitHub Pages, Canva, MailChimp</li>
+            <li><strong>Tools:</strong> GitHub, Canva, MailChimp, WordPress (basic), Square</li>
         </ul>
 
         <div class="divider"></div>
     </div>
-</section>
-    </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Brittany S | Brittany's Digital Studio</p>
+        </div>
+    </footer>
 </body>
 </html>

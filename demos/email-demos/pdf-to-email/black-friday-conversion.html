@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Friday Email Demo</title>
+
+    <style type="text/css">
+        /* Prevent text resizing on mobile devices */
+        body, table, td, p, a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* Remove extra spacing in Outlook */
+        table {
+            border-collapse: collapse;
+        }
+
+        /* Adds in an optional dark mode that will sometimes get ignored */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a !important;
+            }
+        }
+    </style>
+</head>
+
+<body 
+    style="
+        margin:0; 
+        padding:0; 
+        background-color:#f4f4f4;
+    ">
+    
+
+    <!-- This email is 600px wide, a common standard for newsletters -->
+
+    <!-- Preheader text: shows as preview text in inboxes -->
+    <div 
+    style="
+        overflow: hidden;
+        display: none; 
+        font-size: 1px; 
+        line-height: 1px; 
+        color: #f4f4f4;
+        max-height: 0;
+        max-width: 0;
+    ">
+
+            Black Friday deals you don't want to miss
+    </div>
+
+    <!-- Full-width background table -->
+    <table 
+        width="100%" 
+        cellpadding="0" 
+        cellspacing="0" 
+        role="presentation">
+
+        <tr>
+            <td 
+                align="center" 
+                style="padding: 16px;">
+
+                <!-- Main email container (600px wide) -->
+                <table 
+                    width="600"
+                    cellpadding="0" 
+                    cellspacing="0" 
+                    role="presentation" 
+                    style="
+                        max-width: 600px;
+                        width: 100%;
+                        background-color: #ffffff;
+                        border-radius: 6px;
+                ">
+
+                <!-- Header -->
+                <tr>
+                    <td 
+                        style="
+                        padding: 32px 24px 16px; 
+                        text-align: center;
+                        font-family: Arial, sans-serif;
+                    ">
+
+                        <!-- Replace text with logo image if desired -->
+                        <h1 
+                            style="
+                            margin: 0; 
+                            font-size: 28px;
+                        ">
+
+                            Cassette & Co
+                        </h1>
+                    </td>
+                </tr>
+
+                <!-- Hero image seciton -->
+                <tr>
+                    <td 
+                        align="center"
+                        style="
+                        padding: 24px;
+                    ">
+
+                    <!-- Centered image wrapper -->
+                    <table
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                    >
+                        <tr>
+                            <td
+                                style="
+                                    border-radius: 6px;
+                                    overflow: hidden;
+                            ">
+                                <!-- Replace image source with your own -->
+                                <img 
+                                    src="https://brittanysdigitalstudio.github.io/portfolio/demos/demo-playful-portfolio-template/profile-image.jpg"
+                                    alt="Cassette & Co product preview"
+                                    width="520"
+                                    style="
+                                        display: block;
+                                        border: 0;
+                                        width: 520px;
+                                        outline: none;
+                                        text-decoration: none;">
+                            </td>
+                        </tr>
+
+                    </table>
+                    <h2
+                        style="
+                            margin: 16px 0 0;
+                            font-family: Arial, sans-serif;
+                            font-weight: normal;
+                            color: #333333;
+                            text-align: center;
+                        ">
+                        
+                        Black Friday Sale</h2>
+                    </td>
+                </tr>
+
+                <!-- Promotional bar goes here -->
+                <tr>
+                    <td
+                        align="center"
+                        style="
+                        background-color: #111111;
+                        padding: 12px 24px;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        color: #ffffff;
+                        letter-spacing: 0.5px;
+                    ">
+                        BLACK FRIDAY • 30% OFF SITEWIDE • ENDS SUNDAY
+                    </td>
+                </tr>
+
+                <!-- Body -->
+                <!-- Black friday sale information starts here -->
+
+                <!-- Product Grid: 2 procuts per row -->
+                <tr>
+                    <td style="padding: 24px;">
+                        <table
+                            width="100%"
+                            cellpadding="0"
+                            cellspacing="0"
+                            role="presentation"
+                        >
+                            <tr>
+                                <!-- Product 1 -->
+                                <td
+                                    width="50%"
+                                    align="center"
+                                    style="padding: 8px;"
+                                >
+
+                                    <img 
+                                        src="https://brittanysdigitalstudio.github.io/portfolio/screenshots/website-screenshots/resume-template.png" 
+                                        alt="Product One"
+                                        width="240"
+                                        style="
+                                            display: block;
+                                            width: 100%;
+                                            max-width: 240px;
+                                            border: 0;
+                                    ">
+
+                                    <p
+                                        style="
+                                            font-family: Arial, sans-serif;
+                                            font-size: 14px;
+                                            margin: 12px 0 4px;
+                                    ">
+                                        Minimal Resume Template       
+                                    </p>
+
+                                    <p
+                                        style="
+                                            font-family: Arial, sans-serif;
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                            margin: 0 0 8px;
+                                    ">
+                                        $12.00
+                                    </p>
+
+                                    <a 
+                                        href="#"
+                                        style="
+                                            font-family: Arial, sans-serif;
+                                            font-size: 14px;
+                                            color: #333333;
+                                            text-decoration: underline;
+                                    ">
+                                        Shop Now    
+                                    </a>
+                                </td>
+
+                                <!-- Product 2 -->
+                                <td
+                                    width="50%"
+                                    align="center"
+                                    style="padding: 8px;
+                                ">
+                                    <img 
+                                        src="https://brittanysdigitalstudio.github.io/portfolio/screenshots/website-screenshots/portfolio-resume-template.png" 
+                                        alt="Product Two"
+                                        width="240"
+                                        style="
+                                            display: block;
+                                            width: 100%;
+                                            max-width: 240px;
+                                            border: 0;
+                                    ">
+
+                                    <p
+                                        style="
+                                            font-family: Arial, sans-serif;
+                                            font-size: 14px;
+                                            margin: 12px 0 4px;
+                                    ">
+                                        Portfolio Website Template
+                                    </p>
+
+                                    <p
+                                        style="
+                                            font-family: Arial, sans-serif;
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                            margin: 0 0 8px;
+                                    ">
+                                        $29.00
+                                    </p>
+
+                                    <a 
+                                        href="#"
+                                        style="
+                                            font-family: Arial, sans-serif;
+                                            font-size: 14px;
+                                            color: #333333;
+                                            text-decoration: underline;
+                                    ">
+                                        Shop  Now
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <!-- Product 3 -->
+                                <td
+                                    width="50%"
+                                    align="center"
+                                    style="padding: 8px;"
+                                >
+
+                                    <img 
+                                        src="https://brittanysdigitalstudio.github.io/portfolio/screenshots/email-screenshots/newsletter-email-screenshot.png" 
+                                        alt="Product Three"
+                                        width="240"
+                                        style="
+                                            display: block;
+                                            width: 100%;
+                                            max-width: 240px;
+                                            border: 0;
+                                    ">
+
+                                    <p
+                                        style="
+                                            font-family: Arial, sans-serif;
+                                            font-size: 14px;
+                                            margin: 12px 0 4px;
+                                    ">
+                                        Newsletter Email Template       
+                                    </p>
+
+                                    <p
+                                        style="
+                                            font-family: Arial, sans-serif;
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                            margin: 0 0 8px;
+                                    ">
+                                        $15.00
+                                    </p>
+
+                                    <a 
+                                        href="#"
+                                        style="
+                                            font-family: Arial, sans-serif;
+                                            font-size: 14px;
+                                            color: #333333;
+                                            text-decoration: underline;
+                                    ">
+                                        Shop Now    
+                                    </a>
+                                </td>
+
+                                <!-- Product 4 -->
+                                <td
+                                    width="50%"
+                                    align="center"
+                                    style="padding: 8px;
+                                ">
+                                    <img 
+                                        src="https://brittanysdigitalstudio.github.io/portfolio/screenshots/email-screenshots/image-marketing-email-screenshot.png" 
+                                        alt="Product Four"
+                                        width="240"
+                                        style="
+                                            display: block;
+                                            width: 100%;
+                                            max-width: 240px;
+                                            border: 0;
+                                    ">
+
+                                    <p
+                                        style="
+                                            font-family: Arial, sans-serif;
+                                            font-size: 14px;
+                                            margin: 12px 0 4px;
+                                    ">
+                                        Image-Based Marketing Email
+                                    </p>
+
+                                    <p
+                                        style="
+                                            font-family: Arial, sans-serif;
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                            margin: 0 0 8px;
+                                    ">
+                                        $18.00
+                                    </p>
+
+                                    <a 
+                                        href="#"
+                                        style="
+                                            font-family: Arial, sans-serif;
+                                            font-size: 14px;
+                                            color: #333333;
+                                            text-decoration: underline;
+                                    ">
+                                        Shop  Now
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- CTA -->
+                    <tr>
+                        <td 
+                            align="center" 
+                            bgcolor="#ffffff"
+                            style="
+                                padding: 8px 24px 34px;
+                                background-color: #ffffff;
+                            ">
+
+                            <!-- Divider -->
+                            <table
+                                width="100%"
+                                cellpadding="0"
+                                cellspacing="0"
+                                role="presentation"
+                                style="margin: 24px 0;"
+                            >
+                                <tr>
+                                    <td
+                                        height="1"
+                                        bgcolor="#e0e0e0"
+                                        style="
+                                            font-size: 0;
+                                            line-height: 0;
+                                        ">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Button table -->
+                            <!-- Keep this button in for it to work on Outlook -->
+                            <table 
+                                align="center"
+                                cellpadding="0" 
+                                cellspacing="0" 
+                                role="presentation"
+                            >
+                                <tr>
+                                    <td align="center" style="padding-bottom: 12px;">
+                                        <p
+                                            style="
+                                                font-family: Arial, sans-serif;
+                                                font-size: 14px;
+                                                color: #555555;
+                                                text-align: center;
+                                                margin: 0 0 12px 0;
+                                            ">
+                                            Ends Sunday
+                                        </p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td
+                                        align="center"
+                                        bgcolor="#333333"
+                                        style="
+                                            background-color: #333333;
+                                            padding: 12px 24px;
+                                            border: 1px solid #333333;
+                                        ">
+                                        
+                                        <a href="#"
+                                            style="
+                                                display: inline-block;
+                                                font-family: Arial, sans-serif;
+                                                font-size: 16px;
+                                                color: #ffffff;
+                                                text-decoration: none;
+                                                font-weight: normal;
+                                            ">
+                                            Shop the sale
+                                        </a>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+
+                <!-- Footer -->
+                <tr>
+                    <td 
+                        style="
+                            padding: 16px 24px 32px; 
+                            text-align: center; 
+                            font-family: Arial, sans-serif; 
+                            font-size: 12px; 
+                            color: #777777;
+                        ">
+                        
+                        <p style="
+                            margin: 0;
+                        ">
+
+                            You're receiving this email because you signed up on our website.
+                        </p>
+
+                        <p 
+                            style="
+                            margin: 0;
+                        ">
+
+                            <a href="#" 
+                            style="
+                                color: #777777; 
+                                text-decoration: underline;
+                            ">
+                                Unsubscribe
+                            </a>
+                        </p>
+
+                        <p
+                            style="
+                            margin-top: 8px;
+                            font-size: 11px;
+                            color: #aaaaaa;
+                        ">
+                            This email is a fictional demo created for portfolio purposes.
+                        </p>
+                    </td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

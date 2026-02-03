@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Change the title to your website name -->
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--
+        Skip link for keyboard users
+    -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- ==========
+        Header / Site Intro
+    ========== -->
+    <header>
+        <h1>Your Name</h1>
+        <p>Your role or short description</p>
+    </header>  
+    
+    <!-- ==========
+        Main Content
+    ========== -->
+
+    <main id="main-content">
+
+        <!-- ==========
+            Portfolio Section
+        ========== -->
+        <section aria-labelledby="portfolio-heading">
+            <h2 id="portfolio-heading">Selected Work</h2>
+
+            <!-- Project list -->
+            <ul>
+                <!-- Project item -->
+                <li>
+                    <article>
+                        <h3>Project Title</h3>
+                        <!-- Replace image and update alt text -->
+                        <img src="project.png" alt="Brief description of the project image">
+                        <p>Short description of the project and what it involved.</p>
+                        <a href="#">View project</a>
+                    </article>
+                </li>
+
+                <li>
+                    <article>
+                        <h3>Project Title</h3>
+                        <img src="project.png" alt="Breif description of the project image">
+                        <p>Short description of the project and what it involved.</p>
+                        <a href="#">View project</a>
+                    </article>
+                </li>
+                <!-- Duplicate project items as needed -->
+            </ul>
+        </section>
+
+        <!-- ==========
+            About Section
+        ========== -->
+
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading">About</h2>
+            <p>
+                Short introduction or background information. Keep this readable and 
+                pressure-free to edit.
+            </p>
+        </section>
+    </main>
+
+    <!-- ==========
+        Footer / Contact
+    ==========-->
+    <footer>
+        <p>
+            <a href="mailto:you@example.com">Email</a>
+            <span aria-hidden="true"> | </span>
+            <a href="#">LinkedIn</a>
+            <span aria-hidden="true"> | </span>
+            <a href="#">GitHub</a>
+        </p>
+    </footer>
+
+</body>
+</html>

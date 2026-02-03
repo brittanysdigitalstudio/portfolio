@@ -145,6 +145,11 @@ h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.portfolio-button  {
+    display: flex;
+    justify-content: center;
+}
+
 .button:focus-visible {
     outline: 3px solid rgba(78, 223, 209, 0.6);
     outline-offset: 2px;

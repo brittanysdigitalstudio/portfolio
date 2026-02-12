@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Email Script</title>
+
+    <style type="text/css">
+        /* Prevent text resizing on mobile devices */
+        body, table, td, p, a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* Remove extra spacing in Outlook */
+        table {
+            border-collapse: collapse;
+        }
+
+        /* Make images scale on small screens */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body 
+    style="
+        margin:0; 
+        padding:0; 
+        background-color:#f4f4f4;
+    ">
+    
+
+    <!-- This email is 600px wide, a common standard for newsletters -->
+
+    <!-- Preheader text: shows as preview text in inboxes -->
+    <div 
+    style="
+        margin: 0; 
+        padding: 0;
+        overflow: hidden;
+        display: none; 
+        font-size: 1px; 
+        line-height: 1px; 
+        color: #f4f4f4;
+    ">
+
+            [Your Business Name] Monthly Newsletter
+    </div>
+
+    <!-- Full-width background table -->
+    <table 
+        width="100%" 
+        cellpadding="0" 
+        cellspacing="0" 
+        role="presentation">
+
+        <tr>
+            <td align="center" style="padding: 12px;">
+
+                <!-- Main email container (600px wide) -->
+                <table 
+                    width="100%" 
+                    cellpadding="0" 
+                    cellspacing="0" 
+                    role="presentation" 
+                    style="
+                        max-width: 600px;
+                        background-color: #ffffff;
+                        border-radius: 6px;
+                ">
+
+                <!-- Header -->
+                <tr>
+                    <td 
+                        style="
+                        padding: 24px; 
+                        text-align: center;
+                        background-color: #fff5f7;
+                    ">
+
+                        <!-- Replace text with logo image if desired -->
+                        <h1 
+                            style="
+                            margin: 0; 
+                            font-family: Arial, sans-serif; 
+                            font-size: 24px;
+                        ">
+
+                            [Your Business Name] Newsletter Title
+                        </h1>
+                    </td>
+                </tr>
+
+                <!-- Image section -->
+                <tr>
+                    <td 
+                        align="center" 
+                        style="
+                            padding: 24px;
+                        ">
+
+                        <!-- Placeholder image - replace with your own -->
+                        <img src="white-floral-frame.jpg" 
+                        alt="Replace with your image"
+                        width="200"
+                        style="
+                            display: block;
+                            border: 0;
+                            outline: none;
+                            text-decoration: none;
+                    ">
+                    </td>
+                </tr>
+
+                <!-- Soft background content block -->
+                <tr>
+                    <td style="padding: 24px;">
+
+                        <table
+                            width="100%"
+                            cellpadding="0"
+                            cellspacing="0"
+                            role="presentation"
+                            style="
+                                background-color: #f7f7f7;
+                                border-radius: 6px;">
+                            <tr>
+                                <td
+                                    style="
+                                    padding: 24px;
+                                    font-family: Arial, sans-serif;
+                                    font-size: 16px;
+                                    line-height: 1.6;
+                                ">
+
+                                    <p>Hi, [First Name],</p>
+
+                                    <p>
+                                        I wanted to share a few things happening at [Your Business Name] this month, 
+                                        plus some updates I think you'll find helpful.
+                                    </p>
+
+                                    <h3
+                                        style="
+                                            color: #d4896b; 
+                                            font-family: Arial, sans-serif;
+                                    ">
+                                            What's New This Month
+                                    </h3>
+                                    <p style="margin: 0 0 12px 0;">
+                                        [Brief 2-3 sentence update about what's been happening in your business: 
+                                        new products, behind-the-scenes work, seasonal changes, etc.]
+                                    </p>
+
+                                    <h3
+                                        style="
+                                            color: #d4896b; 
+                                            font-family: Arial, sans-serif;
+                                    ">
+                                        [Highlight / Feature Title]
+                                    </h3>
+                                    <p style="margin: 0 0 12px 0;">
+                                        [This is where you can spotlight something specific (a product, service, 
+                                        blog post, or just something you're excited about). Keep it to 3-4 sentences 
+                                        and make it feel personal, not salesy.]
+                                    </p>
+
+                                    <h3 
+                                        style="
+                                            color: #d4896b; 
+                                            font-family: Arial, sans-serif;
+                                    ">
+                                        Quick Reminder
+                                    </h3>
+                                    <p style="margin: 0 0 12px 0;">
+                                        [Optional section for any announcements, upcoming events, seasonal offerings, 
+                                        or gentle reminders about your services. 2-3 sentences max.]
+                                    </p>
+
+                                    <h3
+                                        style="
+                                            color: #d4896b; 
+                                            font-family: Arial, sans-serif;
+                                    ">
+                                        What I've been Reading/Watching/Learning
+                                    </h3>
+                                    <p style="margin: 0 0 12px 0;">
+                                        [Share a recommendation: a book, podcast, article, or just something interesting 
+                                        you came across. This makes the newsletter feel more personal and less 
+                                        promotional. 1-2 sentences.]
+                                    </p>
+
+                                    <p style="margin: 0 0 12px 0;">
+                                        Thanks for being here and supporting [Your Business Name]. It means more than you know.
+                                    </p>
+
+                                    <p style="margin: 0 0 12px 0;">
+                                        Have a wonderful [Month/rest of your week/weekned]!
+                                    </p>
+
+                                    <p style="margin: 0 0 12px 0;">
+                                        [Your Name]
+                                    </p>
+
+                                    <p style="margin: 0 0 12px 0;">
+                                        [Your Business Name]
+                                    </p>
+
+                                    <p style="margin: 0 0 12px 0;">
+                                        P.S. [Optional, add a personal note, fun fact, or casual question to encourage replies]
+                                    </p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- Button section-->
+                <tr>
+                    <td 
+                        align="center" 
+                        style="padding: 24px;
+                    ">
+                        
+                        <!-- Button table -->
+                        <table 
+                            cellpadding="0" 
+                            cellspacing="0" 
+                            role="presentation"
+                        >
+
+                            <tr>
+                                <td
+                                    align="center"
+                                    style="
+                                        background-color: #C97C8C;
+                                        border-radius: 4px;
+                                    ">
+                                    
+                                    <a href="#"
+                                        style="
+                                            display: inline-block;
+                                            padding: 12px 24px;
+                                            font-family: Arial, sans-serif;
+                                            font-size: 16px;
+                                            color: #ffffff;
+                                            text-decoration: none;
+                                        ">
+                                            Read More
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+
+                <!-- Footer -->
+                <tr>
+                    <td 
+                        style="
+                            padding: 24px; 
+                            text-align: center; 
+                            font-family: Arial, sans-serif; 
+                            font-size: 12px; 
+                            color: #777777;
+                        ">
+                        
+                        <p style="
+                            margin: 0 0 8px 0;
+                        ">
+
+                            You're receiving this email because you signed up on our website.
+                        </p>
+
+                        <p 
+                            style="
+                            margin: 0;
+                        ">
+
+                            <a href="#" 
+                            style="
+                                color: #777777; 
+                                text-decoration: underline;
+                            ">
+                                Unsubscribe
+                            </a>
+                        </p>
+                    </td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
